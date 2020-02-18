@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'karla';
+    font-weight: 400;
+}
+.container {
+width: 100%;
+height: 100%;
+}
+header {
+    height: 545px;
+background-color: hsl(256, 26%, 20%);
+}
+
+nav {
+    height: 45px;
+    background-color: white;
+    padding: 2px 70px;
+    position: fixed;
+    width: 90%;
+    margin: 0;
+    z-index: 1;
+}
+
+.logo {
+    width: 40px;
+    display: inline-block;
+    margin: 10px;
+}
+
+ul {
+    list-style-type: none;
+    float: right;
+    margin: 4px auto;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 6px 25px;
+    text-decoration: none;
+    font-size: x-small;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+li a:hover {
+    color: #fff;
+    background-color: black;
+}
+
+.selected {
+    border: 2px solid  hsl(270, 9%, 17%);
+    color:  hsl(270, 9%, 17%);
+}
+
+.peopleImg {
+    float: right;
+    position: relative;
+    top: 100px;
+    right: 100px;
+    height: 520px;
+    width: 490px;
+}
+.header-section {
+    width: 100%;
+    height: 100%;
+display: flex;
+flex-wrap: wrap;
+float: left;
+}
+.header-text {
+    padding-top: 5%;
+    padding-left: 10%;
+    margin-top: 50px;
+    display: block;
+    color: white;
+    width: 48%;
+    height: 55%;
+    background-color: hsl(256, 26%, 20%);
+}
+
+.header-text p {
+    margin-top: 30px;
+}
+h1 {
+    font-family: 'DM Serif Text', serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    margin: 1px 1px;
+    line-height: 65px;
+}
+.header-line {
+    width: 150px;
+    height: 1px;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.header-btn {
+    width: 136px;
+    height: 40px;
+    letter-spacing: 3px;
+    background-color: hsl(256, 26%, 20%);
+    border: 2px solid  white;
+    color: white;
+    margin-top: 18px;
+    
+}
+.header-img {
+    width: 43%;
+    height: 90%;
+    position: absolute;
+    top: 155px;
+    right: 1px;
+}
+.header-img img {
+    height: inherit;
+    padding-left: 20px;
+}
+
+.right-pattern {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 73%;
+}
+
+.left-pattern {
+    position: absolute;
+    top: 61%;
+    left: 0;
+}
+
+/*  Body Part  */
+.body-section {
+    width: 90%;
+    background-color: white;
+    padding-top: 20%;
+    padding-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.body-line {
+    width: 150px;
+    height: 1px;
+    background-color: hsl(273, 4%, 51%);
+    margin-bottom: 75px;
+}
+
+.mid-part {
+    display: block;
+    height: 45%;
+    background-color: white;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+
+.sub-mid-part {
+    width: 33.3%;
+    height: 100%;
+    margin: auto;
+    float: left;
+}
+
+.sub-mid-part p {
+    letter-spacing: 0px;
+}
+
+.last-part {
+    background-color: hsl(256, 26%, 20%);
+    color: white;
+    margin-top: 6%;
+    margin-right: 10%;
+    height: 250px;
+    width: inherit;
+    margin-bottom: 6%;
+    padding-top: 3px;
+    padding-left: 70px;
+}
+
+.last-part-first-p {
+    padding-top: 55px;
+}
+
+.last-part p {
+    font-family: 'DM Serif Text', serif;
+    font-weight: 400;
+    font-size: 3rem;
+    margin: 20px 1px;
+    line-height: 65px;
+    width: 55%;
+    display: inline-block;
+    line-height: 18px;
+}
+
+.body-btn {
+    position: absolute;
+    right: 16%;
+    width: 150px;
+    height: 40px;
+    letter-spacing: 3px;
+    background-color: hsl(256, 26%, 20%);
+    border: 2px solid  white;
+    color: white;
+    margin-top: 100px;
+}
+
+.body-btn-pattern {
+    display: inline;
+    position: absolute;
+    right: 9%;
+    z-index: 2;
+}
+
+/*  Footer Part  */
+.footer-part {
+    background-color: #eaf1f1;
+    height: 360px;
+}
+
+.footer-logo {
+    display: inline;
+    margin-left: 9%;
+}
+.footer-logo-img {
+    margin-top: 60px;
+}
+.footer-logo-pattern {
+    display: inline;
+    position: absolute;
+    left: 0;
+}
+.social-icons {
+    float: right;
+    margin-top: 55px;
+    margin-right: 9%;
+}
+.footer-line {
+    width: 82%;
+    height: 1px;
+    background-color: hsl(262, 7%, 81%);
+    margin: 35px auto;
+}
+.footer-column {
+    width: 20%;
+    float: left;
+}
+.footer-list-title {
+    color: #a09ca9;
+    margin-bottom: 25px;
+}
