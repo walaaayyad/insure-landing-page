@@ -4,15 +4,17 @@ body {
     font-family: 'karla';
     font-weight: 400;
 }
+
 .container {
-width: 100%;
-height: 100%;
+    width: 100%;
+    height: 100%;
 }
+/******[ Header Part ]******/
 header {
     height: 545px;
-background-color: hsl(256, 26%, 20%);
+    background-color: hsl(256, 26%, 20%);
 }
-
+/*  Header Nav Bar  */
 nav {
     height: 45px;
     background-color: white;
@@ -22,13 +24,13 @@ nav {
     margin: 0;
     z-index: 1;
 }
-
+/*   Navbar Logo  */
 .logo {
     width: 40px;
     display: inline-block;
     margin: 10px;
 }
-
+/*   Navbar Items  */
 ul {
     list-style-type: none;
     float: right;
@@ -58,7 +60,7 @@ li a:hover {
     border: 2px solid  hsl(270, 9%, 17%);
     color:  hsl(270, 9%, 17%);
 }
-
+/*  Header People Img  */
 .peopleImg {
     float: right;
     position: relative;
@@ -67,13 +69,15 @@ li a:hover {
     height: 520px;
     width: 490px;
 }
+
 .header-section {
     width: 100%;
     height: 100%;
-display: flex;
-flex-wrap: wrap;
-float: left;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
 }
+/*  Header Title */
 .header-text {
     padding-top: 5%;
     padding-left: 10%;
@@ -88,6 +92,7 @@ float: left;
 .header-text p {
     margin-top: 30px;
 }
+
 h1 {
     font-family: 'DM Serif Text', serif;
     font-weight: 400;
@@ -95,6 +100,7 @@ h1 {
     margin: 1px 1px;
     line-height: 65px;
 }
+
 .header-line {
     width: 150px;
     height: 1px;
@@ -119,6 +125,7 @@ h1 {
     top: 155px;
     right: 1px;
 }
+
 .header-img img {
     height: inherit;
     padding-left: 20px;
@@ -137,7 +144,7 @@ h1 {
     left: 0;
 }
 
-/*  Body Part  */
+/******[  Body Part  ]******/
 .body-section {
     width: 90%;
     background-color: white;
@@ -219,7 +226,7 @@ h1 {
     z-index: 2;
 }
 
-/*  Footer Part  */
+/******[  Footer Part  ]******/
 .footer-part {
     background-color: #eaf1f1;
     height: 360px;
