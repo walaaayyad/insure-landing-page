@@ -1,0 +1,97 @@
+/*  (https://css-tricks.com/snippets/css/media-queries-for-standard-devices/) */
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 2) {
+
+    .container {
+        width: 100%;
+    }
+    header {
+        height: 600px;
+    }
+    .header-text {
+        padding-left: 6%;
+        height: 80%;
+    }
+    .right-pattern {
+        height: 35%;
+    }
+    .header-img img {
+        width: 85%;
+        height: 50%;
+    }
+    .left-pattern {
+        height: 25%;
+        top: 48%;
+    }
+    .sub-mid-part h2 {
+        width: 90%;
+    }
+    .sub-mid-part p {
+        width: 91%;
+    }
+    .last-part p {
+        font-size: 1.75rem;
+    }
+    .footer-part {
+        background-size: 40%;
+    }
+}
+/***************************************************/
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+nav {
+    height: 35px;
+    padding: 23px 18px;
+    position: fixed;
+    z-index: 2;
+}
+ul {
+    display: none;
+}
+header {
+    height: 1000px;
+}
+.header-img {
+    width: 100%;
+    top: 80px;
+    right: 0;
+}
+.header-img img {
+    width: 100%;
+    padding-left: 0;
+}
+.right-pattern {
+    display: none;
+}
+.left-pattern {
+    display: none;
+}
+.header-text {
+    position: absolute;
+    top: 540px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+.header-line {
+    display: none;
+}
+h1 {
+    font-size: 2rem;
+}
+.header-text p {
+    font-size: 16px;
+    color: #ffffff96;
+}
+}
