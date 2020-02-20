@@ -138,11 +138,19 @@ h1 {
     right: 0px;
     height: 73%;
 }
+.right-pattern-mob {
+    display: none;
+}
+
 
 .left-pattern {
     position: absolute;
     top: 61%;
     left: 0;
+}
+
+.left-pattern-mob {
+    display: none;
 }
 
 /******[  Body Part  ]******/
@@ -210,12 +218,15 @@ h1 {
 .last-part p {
     font-family: 'DM Serif Text', serif;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 2.2rem;
     margin: 20px 1px;
     line-height: 65px;
     width: 55%;
     display: inline-block;
     line-height: 18px;
+}
+.last-part-second-p {
+    display: none;
 }
 
 .body-btn {
@@ -230,11 +241,13 @@ h1 {
     margin-top: 100px;
 }
 
-.body-btn-pattern {
+.how-we-work-pattern {
     display: inline;
     position: absolute;
     right: 9%;
-    z-index: 2;
+}
+.how-we-work-pattern-mob {
+    display: none;
 }
 
 /******[  Footer Part  ]******/

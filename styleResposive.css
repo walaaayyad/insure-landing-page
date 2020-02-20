@@ -44,23 +44,35 @@ and (-webkit-min-device-pixel-ratio: 2) {
 /***************************************************/
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
-/* Portrait and Landscape */
+/* Portrait and Landscape 
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (-webkit-min-device-pixel-ratio: 2) {*/
+
+    /* Mobile Styles */
+/* Mobile Styles */
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+
 nav {
+    width: 100%;
     height: 35px;
     padding: 23px 18px;
     position: fixed;
     z-index: 2;
 }
-ul {
+nav ul {
     display: none;
 }
 header {
-    height: 1000px;
+    height: 987px;
 }
+/*.header-section {
+    background: url(images/bg-pattern-intro-left-mobile.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+}*/
 .header-img {
     width: 100%;
     top: 80px;
@@ -69,19 +81,32 @@ header {
 .header-img img {
     width: 100%;
     padding-left: 0;
+    height: 60%;
 }
 .right-pattern {
     display: none;
 }
+.right-pattern-mob {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 830px;
+}
 .left-pattern {
     display: none;
+}
+.left-pattern-mob {
+    display: inline;
+    position: absolute;
+    /*top: 96%;*/
+    top: 64%;
 }
 .header-text {
     position: absolute;
     top: 540px;
     width: 90%;
     margin: 20px auto;
-    padding: 0 20px;
+    padding: 0 15px;
     text-align: center;
 }
 .header-line {
@@ -93,5 +118,86 @@ h1 {
 .header-text p {
     font-size: 16px;
     color: #ffffff96;
+}
+.first-part {
+    margin: auto;
+}
+.body-line {
+    margin: 10% auto;
+}
+
+.mid-part {
+    display: flex;
+    flex-wrap: wrap;
+}
+.body-section {
+    width: 95%;
+    padding-left: 5%;
+}
+.sub-mid-part {
+    width: 100%;
+    text-align: center;
+    margin-top: 36px;
+}
+.sub-text {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.how-we-work-pattern {
+    display: none;
+}
+.how-we-work-pattern-mob {
+    display: inline;
+    position: absolute;
+    right: 27px;
+}
+.last-part {
+    margin-top: 20%;
+    margin-right: 6%;
+    margin-bottom: 30%;
+    width: 100%;
+    height: 380px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.last-part p{
+    width: 100%;
+    text-align: center;
+    margin: 3px 1px;
+    line-height: 50px;
+}
+.body-btn {
+    right: 34%;
+    margin-top: 54%;
+}
+.footer-part {
+    background: url(images/bg-pattern-footer-mobile.svg);
+    background-repeat: no-repeat;
+}
+.footer-logo-pattern {
+    display: none;
+}
+.footer-logo {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-left: 0;
+}
+.social-icons {
+    margin-top: 30px;
+    margin-right: 38%;
+}
+.footer-line {
+    margin-top: 90px;
+}
+.footer-column {
+    text-align: center;
+    width: 64%;
+    height: 205px;
+    line-height: 31px;
+}
+.footer-column ul {
+    width: 135px;
 }
 }
