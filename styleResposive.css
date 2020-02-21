@@ -42,15 +42,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
 }
 /***************************************************/
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
-/* Portrait and Landscape 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {*/
-
-    /* Mobile Styles */
 /* Mobile Styles */
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
 
@@ -67,13 +59,12 @@ nav ul {
 header {
     height: 987px;
 }
-/*.header-section {
-    background: url(images/bg-pattern-intro-left-mobile.svg);
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 50%;
-}*/
+.header-section {
+    margin-top: 510px;
+    height: 500px;
+}
 .header-img {
+    height: 430px;
     width: 100%;
     top: 80px;
     right: 0;
@@ -81,7 +72,7 @@ header {
 .header-img img {
     width: 100%;
     padding-left: 0;
-    height: 60%;
+    height: 100%;
 }
 .right-pattern {
     display: none;
@@ -91,6 +82,7 @@ header {
     position: absolute;
     right: 0;
     top: 830px;
+    z-index: 1;
 }
 .left-pattern {
     display: none;
@@ -98,16 +90,22 @@ header {
 .left-pattern-mob {
     display: inline;
     position: absolute;
-    /*top: 96%;*/
-    top: 64%;
+    top: 72%;
+    z-index: 1;
 }
 .header-text {
     position: absolute;
-    top: 540px;
-    width: 90%;
-    margin: 20px auto;
+    top: 510px;
+    width: 93%;
+    margin: 0 auto;
     padding: 0 15px;
     text-align: center;
+
+    background: url(images/bg-pattern-intro-left-mobile.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 479px;
+    padding-top: 60px;
 }
 .header-line {
     display: none;
@@ -150,16 +148,17 @@ h1 {
 .how-we-work-pattern-mob {
     display: inline;
     position: absolute;
-    right: 27px;
+    right: 4%;
 }
 .last-part {
     margin-top: 20%;
-    margin-right: 6%;
-    margin-bottom: 30%;
+    margin-right: 4%;
+    margin-bottom: 25%;
     width: 100%;
-    height: 380px;
-    padding-left: 50px;
+    height: 410px;
+    padding-left: 48px;
     padding-right: 50px;
+    text-align: center;
 }
 .last-part p{
     width: 100%;
@@ -168,8 +167,8 @@ h1 {
     line-height: 50px;
 }
 .body-btn {
-    right: 34%;
-    margin-top: 54%;
+    position: initial;
+    margin-top: 10%;
 }
 .footer-part {
     background: url(images/bg-pattern-footer-mobile.svg);
