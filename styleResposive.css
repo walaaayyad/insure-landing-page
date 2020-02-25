@@ -45,7 +45,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
 /* Mobile Styles */
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
-
 nav {
     width: 100%;
     height: 35px;
@@ -53,8 +52,79 @@ nav {
     position: fixed;
     z-index: 2;
 }
-nav ul {
-    display: none;
+.hamburgerIcon {
+    display: inline-block;
+    position: absolute;
+    top: 28%;
+    right: 15%;
+}
+.close-hamburgerIcon {
+    display: inline-block;
+    position: absolute;
+    top: 28%;
+    right: 15%;
+    z-index: -1;
+}
+
+.navList {
+    position: fixed;
+   /* background-color: hsl(256, 12%, 18%);*/
+   background-color: hsl(256, 26%, 20%);
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    clip-path: circle(1px at 100% 1%);
+    -webkit-clip-path: circle(1px at 100% 1%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+
+}
+.navList.open {
+    clip-path: circle(1000px at 90% 10%);
+    -webkit-clip-path: circle(1000px at 90% 10%);
+    pointer-events: all;
+}
+.navList li a {
+    color: white;
+    margin-top: 15px;
+    font-size: 18px;
+}
+.selected {
+    border: 2px solid  white;
+    padding: 7px 100px;
+}
+/* To make nav list appeare one after one*/
+.navList li {
+    opacity: 0;
+}
+.navList li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+}
+.navList li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+}
+.navList li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+}
+.navList li:nth-child(4) {
+    transition: all 0.5s ease 0.8s;
+}
+li.fade {
+    opacity: 1;
+}
+/**************************/
+.navPattern {
+    display: block;
+}
+.navPattern img {
+    width: 100vw;
+    position: absolute;
+    bottom: 60px;
+    left: 0;
 }
 header {
     height: 987px;
