@@ -4,8 +4,17 @@ const navList = document.querySelector('.navList');
 const links = document.querySelectorAll('.navList li');
 
 hamburger.addEventListener('click', ()=> {
-    navList.classList.toggle('open');
+    navList.classList.add('open');
+    hamburger.classList.add('hidden');
     links.forEach(link=> {
-        link.classList.toggle('fade')
+        link.classList.add('fade')
+    });
+})
+
+hamburgerClose.addEventListener('click', ()=> {
+    navList.classList.remove('open');
+    hamburger.classList.remove('hidden');
+    links.forEach(link=> {
+        link.classList.remove('fade')
     });
 })

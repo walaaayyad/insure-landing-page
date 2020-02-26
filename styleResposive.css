@@ -65,6 +65,9 @@ nav {
     right: 15%;
     z-index: -1;
 }
+.hamburgerIcon.hidden {
+    display: none;
+}
 
 .navList {
     position: fixed;
