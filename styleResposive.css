@@ -10,6 +10,22 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .container {
         width: 100%;
     }
+    nav {
+        padding: 1%;
+        width: 99%;
+    }
+    .navList {
+        width: 73%;
+        display: flex;
+        justify-content: space-around;
+        margin-left: auto;
+    }
+    nav li {
+        float: right;
+    }
+    li a {
+        padding: 6px 6px;
+    }
     header {
         height: 600px;
     }
@@ -18,11 +34,24 @@ and (-webkit-min-device-pixel-ratio: 2) {
         height: 80%;
     }
     .right-pattern {
-        height: 35%;
+        height: 45%;
+    }
+    .header-img {
+        top: 11%;
+        width: 47%;
+        height: 70%;
+        right: 2px;
     }
     .header-img img {
-        width: 85%;
-        height: 50%;
+        width: 90%;
+        height: 80%;
+    }
+    h1 {
+        width: max-content;
+        font-size: 2rem;
+    }
+    .mid-part {
+        margin-right: auto;
     }
     .left-pattern {
         height: 25%;
@@ -40,11 +69,22 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .footer-part {
         background-size: 40%;
     }
+    .footer-column {
+        margin-left: 4%;
+    }
+    .last-part p {
+        font-size: 1.4rem;
+    }
+    .last-part {
+        padding-left: 40px;
+    }
+  
 }
 /***************************************************/
 
 /* Mobile Styles */
-@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 500px), only screen and (max-device-width: 500px)
+and (orientation: landscape) {
 nav {
     width: 100%;
     height: 35px;
@@ -273,4 +313,17 @@ h1 {
 .footer-column ul {
     width: 135px;
 }
+}
+/******************************************************/
+/*********** Mobail Landscape ************/
+@media only screen 
+and (max-device-height: 420px) 
+and (max-device-width: 850px) {
+    .right-pattern {
+        height: 90%;
+    }
+    .header-img {
+        top: 70%;
+        height: 100%;
+    } 
 }
